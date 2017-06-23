@@ -46,9 +46,9 @@ const Page1 = ({history: {push}}) => (
 
 ---
 
+```jsx
 const bem = bemForBlock('page-1');
 
-```jsx
 const Page1 = ({history: {push}}) => (
   <div className={bem(null, {'some-modifier': true})}>
     <h1 className={bem('heading', 'another-modifier')}>

@@ -22,7 +22,7 @@
 
 ---
 
-```jsx
+```js
 const Page1 = ({history: {push}}) => (
   <div className="react-app-page-1--some-modifier">
     <h1 className="react-app-page-1__heading react-app-page-1__heading--another-modifier">
@@ -46,7 +46,7 @@ const Page1 = ({history: {push}}) => (
 
 ---
 
-```jsx
+```js
 const bem = bemForBlock('page-1');
 
 const Page1 = ({history: {push}}) => (

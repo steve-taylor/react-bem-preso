@@ -6,8 +6,8 @@
 
 ## BEM
 
-* `block__element--modifier`
 * `class="my-block"`
+* `class="my-block--my-modifier"`
 * `class="my-block__my-element"`
 * `class="my-block__my-element my-block__my-element--my-modifier"`
 * `class="my-block__my-element my-block__my-element--my-modifier my-block__my-element--another-modifier"`
@@ -24,7 +24,7 @@
 
 ```js
 const Page1 = ({history: {push}}) => (
-  <div className="react-app-page-1--some-modifier">
+  <div className="react-app-page-1 react-app-page-1--some-modifier">
     <h1 className="react-app-page-1__heading react-app-page-1__heading--another-modifier">
       Page 1
     </h1>
@@ -70,7 +70,7 @@ const Page1 = ({history: {push}}) => (
 
 ```scss
 .react-app { // Namespace
-  .page-1 { // Block
+  &-page-1 { // Block
     // block rules...
     
     &--some-modifier { // Modifier
